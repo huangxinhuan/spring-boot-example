@@ -19,8 +19,8 @@
 
 
     <modules>
-        <module>spring-boot-01-scaffolding</module>
-        <module>spring-boot-02-helloworld</module>
+        <module>demo-01-scaffolding</module>
+        <module>demo-02-helloworld</module>
     </modules>
 
 

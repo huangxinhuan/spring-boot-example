@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example.demo</groupId>
-    <artifactId>spring-boot-01-scaffolding</artifactId>
+    <artifactId>demo-01-scaffolding</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -17,7 +17,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>spring-boot-01-scaffolding</name>
+    <name>demo-01-scaffolding</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
