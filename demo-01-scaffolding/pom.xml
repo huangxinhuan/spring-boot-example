@@ -3,28 +3,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example.demo</groupId>
-    <artifactId>spring-boot-02-helloworld</artifactId>
+    <artifactId>spring-boot-01-scaffolding</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>com.example.demo.HelloWorldApp</mainClass>
     </properties>
 
     <parent>
         <groupId>com.example.demo</groupId>
-        <artifactId>spring-boot-demo</artifactId>
+        <artifactId>spring-boot-example</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-
-    <name>spring-boot-02-helloworld</name>
+    <name>spring-boot-01-scaffolding</name>
+    <url>http://maven.apache.org</url>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
 
@@ -36,8 +36,6 @@
             <scope>test</scope>
         </dependency>
 
+
     </dependencies>
-
-
-
 </project>
