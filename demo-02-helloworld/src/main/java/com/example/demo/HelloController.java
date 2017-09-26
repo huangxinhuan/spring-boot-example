@@ -15,7 +15,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index(HttpServletRequest request){
-        log.info("Service request from {}:{} at {}",request.getRemoteHost(),request.getRemotePort(), LocalDateTime.now());
+        log.info("Service request from {}:{} at {}.",request.getRemoteHost(),request.getRemotePort(), LocalDateTime.now());
         return "Hello World from Spring Boot @" + LocalDateTime.now();
     }
 

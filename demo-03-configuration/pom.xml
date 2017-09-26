@@ -3,12 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example.demo</groupId>
-    <artifactId>demo-01-scaffolding</artifactId>
+    <artifactId>demo-03-configuration</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--<mainClass>com.example.demo.HelloWorldApp</mainClass>-->
     </properties>
 
     <parent>
@@ -17,16 +18,24 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>demo-01-scaffolding</name>
-    <url>http://maven.apache.org</url>
+
+    <name>demo-03-configuration</name>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>${spring.boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
         <dependency>
@@ -36,6 +45,8 @@
             <scope>test</scope>
         </dependency>
 
-
     </dependencies>
+
+
+
 </project>
