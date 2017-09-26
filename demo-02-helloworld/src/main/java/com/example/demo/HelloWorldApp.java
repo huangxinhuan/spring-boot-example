@@ -17,7 +17,15 @@ public class HelloWorldApp {
 
     public static void main(String[] args){
         SpringApplication.run(HelloWorldApp.class,args);
+        // will execute CommandLineRunner here...
     }
+
+    /**
+     * Run some specific code once the SpringApplication has started, you can implement the ApplicationRunner or CommandLineRunner interfaces.
+     * Both interfaces work in the same way and offer a single run method which will be called just before SpringApplication.run(…​) completes.
+     * @param ctx
+     * @return
+     */
 
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx){
