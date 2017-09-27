@@ -1,13 +1,17 @@
-
-# self-defined properties
-my:
-  name: "V1cent_zZ"
-  uuid: ${random.uuid}
-  nums:
-    - ${random.int}
-    - ${random.int[10]} # less than 10
-    - ${random.int[10,20]} # range in [10,20]
-
-
-server:
-  port: 8000
+#mail properties
+mail:
+  # simple properties
+  host : demo.example.com
+  port: 9000
+  from: user@demo.example.com
+  # list properties
+  recipients:
+    - admim@demo.example.com
+    - owner@demo.example.com
+  # Object properties
+  credential:
+    username: username
+    password: password01
+    auth-method:
+      - SHA1
+      - MD5
