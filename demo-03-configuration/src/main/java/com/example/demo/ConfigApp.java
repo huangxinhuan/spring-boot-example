@@ -10,8 +10,6 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 public class ConfigApp {
-    @Autowired
-    DataSource dataSource;
 
     public static void main(String[] args){
         SpringApplication.run(ConfigApp.class,args);
