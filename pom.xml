@@ -22,6 +22,7 @@
         <module>demo-01-scaffolding</module>
         <module>demo-02-helloworld</module>
         <module>demo-03-configuration</module>
+        <module>demo-04-restful</module>
     </modules>
 
 
