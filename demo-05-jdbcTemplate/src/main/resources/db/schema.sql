@@ -1,0 +1,11 @@
+CREATE TABLE `users`(
+  `id` INTEGER AUTO_INCREMENT PRIMARY KEY,
+  `name` CHAR(16) NOT NULL
+);
+
+CREATE TABLE `accounts`(
+  `id` INTEGER AUTO_INCREMENT PRIMARY KEY,
+  `uid` INTEGER NOT NULL,
+  `amount` DECIMAL(14,2),
+  FOREIGN KEY (`uid`) REFERENCES `users`(`id`)
+);
