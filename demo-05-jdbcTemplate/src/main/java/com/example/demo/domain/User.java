@@ -24,6 +24,6 @@ public class User {
 
     @Override
     public String toString() {
-        return String.format("{\"id\"=%d, \"name\"=\"%s\"}", id, name);
+        return String.format("{\"id\":%d,\"name\":\"%s\"}", id, name);
     }
 }
