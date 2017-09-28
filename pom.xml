@@ -23,6 +23,7 @@
         <module>demo-02-helloworld</module>
         <module>demo-03-configuration</module>
         <module>demo-04-restful</module>
+        <module>demo-05-jdbcTemplate</module>
     </modules>
 
 

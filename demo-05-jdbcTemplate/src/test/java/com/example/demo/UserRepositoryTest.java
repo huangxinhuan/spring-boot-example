@@ -28,7 +28,7 @@ public class UserRepositoryTest {
 
     @Test
     public void testDeleteOne() throws Exception{
-        Integer row =repo.deleteOne(3);
+        Integer row =repo.deleteOne(9999);
         Assert.assertEquals(Integer.valueOf(0),row);
     }
 

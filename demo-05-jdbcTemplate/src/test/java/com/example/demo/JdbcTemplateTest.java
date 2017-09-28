@@ -36,7 +36,7 @@ public class JdbcTemplateTest {
         String sql = "SELECT `name`, SUM(`amount`) FROM `users`,`accounts` WHERE `users`.`id`=`accounts`.`uid` GROUP BY `users`.`id`";
         System.out.println(String.format("%8s | %8s","name","sum"));
         template.query(sql, row -> {
-            System.out.println(String.format("%8s | %8s",row.getString(1),row.getDouble(2)));
+            System.out.println(String.format("%8s | %8.2f",row.getString(1),row.getDouble(2)));
         });
 
     }

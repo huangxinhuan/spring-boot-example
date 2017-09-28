@@ -7,5 +7,5 @@ CREATE TABLE `accounts`(
   `id` INTEGER AUTO_INCREMENT PRIMARY KEY,
   `uid` INTEGER NOT NULL,
   `amount` DECIMAL(14,2),
-  FOREIGN KEY (`uid`) REFERENCES `users`(`id`)
+  FOREIGN KEY (`uid`) REFERENCES `users`(`id`) ON UPDATE CASCADE
 );

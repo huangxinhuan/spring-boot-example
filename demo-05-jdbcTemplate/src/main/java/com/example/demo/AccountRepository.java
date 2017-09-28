@@ -1,13 +1,19 @@
 package com.example.demo;
 
 import com.example.demo.domain.Account;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public class AccountRepository extends BaseRepository implements GenericDao<Integer, Account> {
+public class AccountRepository implements GenericDao<Integer, Account> {
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
     @Override
     public Account findOne(Integer key) {
         String sql = "SELECT `id`,`uid`,`amount` FROM `accounts` WHERE `id`=?";

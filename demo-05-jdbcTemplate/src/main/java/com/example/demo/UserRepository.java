@@ -1,13 +1,18 @@
 package com.example.demo;
 
 import com.example.demo.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class UserRepository extends BaseRepository implements GenericDao<Integer, User> {
+public class UserRepository implements GenericDao<Integer, User> {
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
     @Override
     public User findOne(Integer key) {
