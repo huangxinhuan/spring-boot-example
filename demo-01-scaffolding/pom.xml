@@ -9,16 +9,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>1.5.7.RELEASE</spring.boot.version>
     </properties>
 
-    <parent>
-        <groupId>com.example.demo</groupId>
-        <artifactId>spring-boot-example</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
-
-    <name>demo-01-scaffolding</name>
-    <url>http://maven.apache.org</url>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
@@ -36,6 +29,45 @@
             <scope>test</scope>
         </dependency>
 
-
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>Aliyun_Nexus</id>
+            <name>Aliyun Nexus Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
+
+
 </project>
