@@ -17,30 +17,14 @@ public class SpringDataJpaDemo {
     }
 
     @Bean
-    public CommandLineRunner demo(UserRepository repository) {
+    public CommandLineRunner demo(UserCrudRepository repository) {
         return (args) -> {
-            // save a couple of Userrs
-            repository.save(new User("Jack"));
+            // save a couple of Users
             repository.save(new User("Chloe"));
             repository.save(new User("Kim"));
             repository.save(new User("David"));
             repository.save(new User("Michelle"));
-
-            // fetch all Users
-            log.info("Users found with findAll():");
-            log.info("-------------------------------");
-            for (User User : repository.findAll()) {
-                log.info(User.toString());
-            }
-            log.info("");
-
-            // fetch an individual User by ID
-            User User = repository.findOne(1);
-            log.info("User found with findOne(1L):");
-            log.info("--------------------------------");
-            log.info(User.toString());
-            log.info("");
-
+            log.info("add users from CommandLineRunner.");
         };
     }
 
