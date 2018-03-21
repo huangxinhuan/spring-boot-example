@@ -25,7 +25,7 @@ public class User {
     }
 
     // getter & setter
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getId() {
         return id;
     }

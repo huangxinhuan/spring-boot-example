@@ -20,11 +20,11 @@ public class SpringDataJpaDemo {
     public CommandLineRunner demo(UserCrudRepository repository) {
         return (args) -> {
             // save a couple of Users
-            repository.save(new User("Chloe"));
-            repository.save(new User("Kim"));
-            repository.save(new User("David"));
-            repository.save(new User("Michelle"));
-            log.info("add users from CommandLineRunner.");
+//            repository.save(new User("Chloe"));
+//            repository.save(new User("Kim"));
+//            repository.save(new User("David"));
+//            repository.save(new User("Michelle"));
+//            log.info("add users from CommandLineRunner.");
         };
     }
 
